@@ -1,10 +1,11 @@
-# 포트폴리오 이미지
+# 포트폴리오 이미지 (여성복)
 
-| 파일 | 용도 |
-|------|------|
-| `work-1.jpg` | 주요 경력 카드 1 |
-| `work-2.jpg` | 주요 경력 카드 2 |
+[Unsplash License](https://unsplash.com/license)에 따라 사용한 스톡 사진입니다.
 
-본인 작업·스케치·룩북 사진으로 교체할 때 **같은 파일명**을 유지하면 `index.html` 수정 없이 반영됩니다.
+| 파일 | 내용 | 출처 |
+|------|------|------|
+| `hero.jpg` | 스튜디오에서 **여성복 스케치**를 그리는 디자이너 | [Unsplash](https://unsplash.com/photos/fashion-designer-working-on-a-new-garment-in-studio-sJOq2XbyFxg) |
+| `work-1.jpg` | 워크숍에서 **레이디스 가먼트 스케치** 작업 | [Unsplash](https://unsplash.com/photos/fashion-designer-sketches-in-her-workshop-4GEHZWu66-8) |
+| `work-2.jpg` | 매장 마네킹 **여성 캐주얼 의류** 전시 | [Unsplash](https://unsplash.com/photos/mannequins-displaying-casual-womens-clothing-in-store-ME4hmIGXPHA) |
 
-권장: 가로 1600px 이상, JPG/WebP, 4:3 비율.
+본인 룩북·도식·피팅 사진으로 교체 시 동일 파일명을 유지하세요.
