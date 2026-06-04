@@ -24,8 +24,14 @@ git remote add origin https://github.com/USER/REPO.git
 git push -u origin main
 ```
 
-3. 저장소 **Settings → Pages → Deploy from branch → `main` / `/ (root)`**
-4. `https://USER.github.io/REPO/` 에서 확인
+3. 저장소 **Settings → Pages** 에서 아래 중 하나 선택:
+   - **Deploy from a branch** → Branch: `gh-pages` / Folder: `/ (root)` (권장, 한 번만 설정)
+   - 또는 **GitHub Actions** (`.github/workflows/deploy-pages.yml` 사용 시)
+4. `https://havits10237-maker.github.io/havits10237.github.io/` 에서 확인 (1~3분 소요)
+
+### 이미 push만 완료한 경우 (한 번만 하면 됨)
+
+[저장소 Settings → Pages](https://github.com/havits10237-maker/havits10237.github.io/settings/pages) 에서 **Build and deployment → Source** 를 **Deploy from a branch** 로 바꾸고, Branch **`gh-pages`** / **`/ (root)`** 를 선택한 뒤 Save.
 
 ## 파일
 
