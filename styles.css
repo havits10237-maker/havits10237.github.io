@@ -194,6 +194,7 @@ h3 {
 .hero__content {
   position: relative;
   z-index: 1;
+  max-width: 36rem;
 }
 
 @media (min-width: 48rem) {
@@ -218,11 +219,11 @@ h3 {
 }
 
 .hero__lead {
-  font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+  font-size: clamp(1rem, 2vw, 1.2rem);
   color: var(--text-muted);
-  max-width: 42ch;
+  max-width: 32ch;
   margin: 0 0 var(--space-lg);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .hero__role {
@@ -253,20 +254,40 @@ h3 {
   color: var(--bg);
 }
 
-.approach-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: var(--space-lg);
+.section--about {
+  background: var(--bg-elevated);
+  border-block: 1px solid var(--border);
 }
 
-.approach-card h3 {
-  font-size: 1.5rem;
-  margin: 0 0 var(--space-sm);
-}
-
-.approach-card p {
-  margin: 0;
+.about__summary {
+  font-size: clamp(1.0625rem, 2vw, 1.2rem);
+  line-height: 1.75;
   color: var(--text-muted);
+  max-width: 40ch;
+  margin: 0 0 var(--space-xl);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: var(--space-md);
+}
+
+.about-card {
+  padding: var(--space-md) 0;
+  border-top: 1px solid var(--border);
+}
+
+.about-card h3 {
+  font-size: 1.125rem;
+  margin: 0 0 var(--space-xs);
+}
+
+.about-card p {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.55;
 }
 
 .stats {
@@ -372,27 +393,29 @@ h3 {
 
 .skills-grid {
   display: grid;
-  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: var(--space-md) var(--space-lg);
 }
 
 .skill-item {
-  padding-bottom: var(--space-lg);
-  border-bottom: 1px solid var(--border);
-}
-
-.skill-item:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
+  padding: var(--space-md);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
 }
 
 .skill-item h3 {
-  font-size: 1.25rem;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  font-weight: 500;
   margin: 0 0 var(--space-xs);
 }
 
 .skill-item p {
   margin: 0;
+  font-size: 0.875rem;
   color: var(--text-muted);
+  line-height: 1.5;
 }
 
 .cta-band {
@@ -412,25 +435,32 @@ h3 {
 
 .section__intro {
   color: var(--text-muted);
-  max-width: 52ch;
+  max-width: 36ch;
   margin: 0 0 var(--space-lg);
+  font-size: 0.9375rem;
 }
 
 .case-study__list {
   margin: 0;
-  padding-left: 1.125rem;
+  padding-left: 1rem;
   color: var(--text-muted);
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
+  line-height: 1.55;
 }
 
 .case-study__list li + li {
-  margin-top: var(--space-xs);
+  margin-top: 0.35rem;
 }
 
 .cta-band__summary {
-  font-size: 1.0625rem;
+  font-size: 1rem;
   color: var(--text);
-  max-width: 44ch;
+  max-width: 32ch;
+}
+
+.cta-band__note {
+  font-size: 0.875rem;
+  max-width: 36ch;
 }
 
 .cta-band__btn-wrap {
@@ -469,6 +499,21 @@ h3 {
 .faq-item p {
   color: var(--text-muted);
   margin: var(--space-sm) 0 0;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  max-width: 48ch;
+}
+
+.faq-list {
+  margin: var(--space-sm) 0 0;
+  padding-left: 1rem;
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.faq-list li + li {
+  margin-top: 0.35rem;
 }
 
 .site-footer {

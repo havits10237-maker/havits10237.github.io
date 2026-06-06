@@ -29,9 +29,28 @@ git push -u origin main
    - 또는 **GitHub Actions** (`.github/workflows/deploy-pages.yml` 사용 시)
 4. `https://havits10237-maker.github.io/havits10237.github.io/` 에서 확인 (1~3분 소요)
 
-### 이미 push만 완료한 경우 (한 번만 하면 됨)
+### GitHub 로그인으로 Pages 켜기 (권장)
 
-[저장소 Settings → Pages](https://github.com/havits10237-maker/havits10237.github.io/settings/pages) 에서 **Build and deployment → Source** 를 **Deploy from a branch** 로 바꾸고, Branch **`gh-pages`** / **`/ (root)`** 를 선택한 뒤 Save.
+프로젝트 폴더에서 PowerShell:
+
+```powershell
+.\setup-github-pages.ps1
+```
+
+1. 브라우저가 열리면 [github.com/login/device](https://github.com/login/device) 에서 **표시된 8자리 코드** 입력
+2. GitHub 계정(`havits10237-maker`)으로 승인
+3. 스크립트가 `gh-pages` 브랜치로 Pages를 켜고 사이트 URL을 엽니다
+
+수동 로그인만 필요할 때:
+
+```powershell
+gh auth login -h github.com -p https -w
+gh api repos/havits10237-maker/havits10237.github.io/pages -X POST -f "build_type=legacy" -f "source[branch]=gh-pages" -f "source[path]=/"
+```
+
+### Settings에서 직접 설정 (대안)
+
+[저장소 Settings → Pages](https://github.com/havits10237-maker/havits10237.github.io/settings/pages) → **Deploy from a branch** → **`gh-pages`** / **`/ (root)`** → Save.
 
 ## 파일
 
